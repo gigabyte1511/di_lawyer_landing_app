@@ -1,0 +1,26 @@
+.container{
+    width: 25vw;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.header{
+    font-weight: 200;
+    font-size: 3vw;
+    line-height: 3vw;
+    color: #4B4530;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.button{
+    font-weight: 200;
+    font-size: 2vw;
+    line-height: 2vw;
+    color: #4B4530;
+    text-align: center;
+}
