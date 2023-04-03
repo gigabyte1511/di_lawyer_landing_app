@@ -1,0 +1,77 @@
+.container{
+    width: 100vw;
+}
+.image{
+    width: 100vw;
+
+}
+.textfield{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    left: 20vw;
+    top: 25vw;
+}
+.textfield h1{
+    width: 30vw;
+    font-weight: 300;
+    font-size: 3vw;
+    line-height: 3vw;
+    color: #4B4530;
+    margin: 0;
+
+}
+.textfield h2{
+    font-weight: 300;
+    font-size: 2vw;
+    line-height: 2vw;
+    color: #4B4530;
+    margin: 0;
+
+}
+.textfield p {
+    font-weight: 300;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    color: #4B4530;
+    margin: 0;
+}
+.button{
+    width: 25vw;
+    font-weight: 300;
+    font-size: 2vw;
+    line-height: 2vw;
+    text-align: center;
+    color: #D1D1D1;
+    background-color: #944C40;
+    border-radius: 10px;
+    border: 0;
+    padding: 5px;
+}
+.button:hover{
+    opacity: 0.8;
+}
+.navigation{
+    position: absolute;
+    display: flex;
+    gap: 1vw;
+    top: 1vw;
+    left: 80vw;
+}
+.navigation div{
+    font-weight: 300;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    color: #4B4530;
+    margin: 0;
+}
+.services{
+    position: absolute;
+    left: 5vw;
+    top: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+}
