@@ -2,6 +2,7 @@ import style from './style.module.css'
 import { Formik, Form, Field } from 'formik'
 import * as Yup from 'yup'
 import CustomInput from '../CustomInput/CustomInput'
+import { toast } from 'react-toastify'
 
 interface MyFormValues {
   name: string
@@ -24,7 +25,7 @@ export default function ContactForm (): JSX.Element {
              .required('Введите ваш email-адрес')
          })}
          onSubmit={(values, actions) => {
-           console.log({ values, actions })
+           toast.success(`${values.name}, ваша заявка успешно создана!`, { icon: '❤️' })
          }}
        >
         {({ errors, touched }) => (

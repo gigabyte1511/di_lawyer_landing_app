@@ -12,28 +12,28 @@
     flex-direction: column;
     gap: 10px;
     left: 20vw;
-    top: 25vw;
+    top: 26vw;
 }
 .textfield h1{
-    width: 30vw;
+    width: 35vw;
     font-weight: 300;
-    font-size: 3vw;
-    line-height: 3vw;
+    font-size: 4vw;
+    line-height: 4vw;
     color: #4B4530;
     margin: 0;
 
 }
 .textfield h2{
     font-weight: 300;
-    font-size: 2vw;
-    line-height: 2vw;
+    font-size: 2.5vw;
+    line-height: 1vw;
     color: #4B4530;
     margin: 0;
 
 }
 .textfield p {
     font-weight: 300;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     line-height: 1.5vw;
     color: #4B4530;
     margin: 0;
@@ -51,19 +51,21 @@
     padding: 5px;
 }
 .button:hover{
-    opacity: 0.8;
+    background-color: #944132;
+    transition: background-color 0.2s;
+
 }
 .navigation{
     position: absolute;
     display: flex;
     gap: 1vw;
     top: 1vw;
-    left: 80vw;
+    left: 77vw;
 }
 .navigation div{
     font-weight: 300;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 1.8vw;
+    line-height: 1.8vw;
     color: #4B4530;
     margin: 0;
 }
@@ -72,7 +74,8 @@
     left: 5vw;
     top: 70vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-auto-rows: 12vw;
     grid-column-gap: 2vw;
     grid-row-gap: 2vw;
 }
