@@ -1,8 +1,10 @@
 import style from './style.module.css'
 import header from './img/header.png'
 import Bar from '../Bar/Bar'
+import { useNavigate } from 'react-router-dom'
 
 function Header (): JSX.Element {
+  const navigate = useNavigate()
   const $consultationAbout = (
     <>
       <p>Первичная консультация (устная) - <b>бесплатно</b></p>
@@ -42,7 +44,7 @@ function Header (): JSX.Element {
             <h2>Ваш личный адвокат</h2>
             <h1>Альмяшева Диана Ильдаровна</h1>
             <p>Регистрационный номер в реестре адвокатов: 228</p>
-            <button className={style.button}>Получить консультацию</button>
+            <button className={style.button} onClick={() => { navigate('/contacts') }}>Получить консультацию</button>
 
         </div>
         <nav className={style.navigation}>
