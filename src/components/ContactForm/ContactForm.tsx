@@ -1,6 +1,7 @@
 import style from './style.module.css'
 import { Formik, Form, Field } from 'formik'
 import * as Yup from 'yup'
+import CustomInput from '../CustomInput/CustomInput'
 
 interface MyFormValues {
   name: string
@@ -16,11 +17,11 @@ export default function ContactForm (): JSX.Element {
        <Formik
          initialValues={initialValues}
          validationSchema={Yup.object({
-           name: Yup.string().required('Please enter full name'),
-           phone: Yup.string().required('Please enter full name'),
+           name: Yup.string().required('Введите ваше имя'),
+           phone: Yup.string().required('Введите ваш номер телефона'),
            email: Yup.string()
-             .email()
-             .required('Enter valid email-id')
+             .email('Невалидный email-адрес')
+             .required('Введите ваш email-адрес')
          })}
          onSubmit={(values, actions) => {
            console.log({ values, actions })
@@ -28,15 +29,9 @@ export default function ContactForm (): JSX.Element {
        >
         {({ errors, touched }) => (
          <Form className={style.form}>
-           <Field id="name" name="name" placeholder="Ваше имя" />
-           {errors.name && touched.name ? (<div >{errors.name}</div>) : null}
-
-           <Field id="phone" name="phone" placeholder="Ваш номер телефона" />
-           {errors.phone && touched.phone ? (<div >{errors.phone}</div>) : null}
-
-           <Field id="email" name="email" placeholder="Ваш email" />
-           {errors.email && touched.email ? (<div >{errors.email}</div>) : null}
-
+           <CustomInput id="name" name="name" placeholder="Ваше имя" errors = {errors.name} touched = {touched.name} />
+           <CustomInput id="phone" name="phone" placeholder="Ваш номер телефона" errors = {errors.phone} touched = {touched.phone} />
+           <CustomInput id="email" name="email" placeholder="Ваш email" errors = {errors.email} touched = {touched.email} />
            <button className={style.button} type="submit">Оставить заявку</button>
          </Form>
         )}
