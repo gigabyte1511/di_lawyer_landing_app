@@ -1,3 +1,4 @@
+import FormSection from '../Sections/FormSection/FormSection'
 import ContactSection from '../Sections/ContactSection/ContactSection'
 import SectionFirst from '../Sections/SectionFirst/SectionFirst'
 import style from './style.module.css'
@@ -6,6 +7,7 @@ export default function Main (): JSX.Element {
     <div className={style.container}>
         <SectionFirst />
         <ContactSection />
+        <FormSection />
     </div>
   )
 }

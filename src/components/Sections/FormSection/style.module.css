@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;  
+}
+.header{
+    font-weight: 200;
+    font-size: 3vw;
+    line-height: 3vw;
+    color: #4B4530;
+}
+.imageVrapper{
+    position: relative;
+    width: 70vw;
+}
+.image{
+    width: 70vw;
+}
+.form{
+    position: absolute;
+    top: 15vw;
+    left: 12vw;
+
+}
