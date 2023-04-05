@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Modal from './components/Modal/Modal'
+import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 
 const router = createBrowserRouter([
   {
