@@ -10,16 +10,99 @@
     line-height: 3vw;
     color: #4B4530;
 }
-.imageVrapper{
-    position: relative;
-    width: 70vw;
+.messengers{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 4vw;
 }
-.image{
-    width: 70vw;
-}
-.form{
-    position: absolute;
-    top: 15vw;
-    left: 12vw;
+.instagram{
 
 }
+.instagram img{
+    width: 30vw;
+    filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
+}
+.telegramm{
+
+}
+.telegramm img{
+    width: 30vw;
+    filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
+}
+.buttonContainer{
+    display: flex;
+    gap: 16vw;
+
+}
+.buttonContainer .instButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    gap: 1vw;
+
+    font-weight: 200;
+    font-size: 2.4vw;
+    line-height: 2.4vw;
+
+    width: 18vw;
+    height: 6vw;
+
+    color:#301b1b;
+
+    border: none;
+    background: linear-gradient(125.12deg, #FFBA0E 0.32%, #F43A7C 51.88%, #8300FF 95.63%);
+    border-radius: 1vw 1vw 3vw 3vw;
+    filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
+
+
+}
+.instButton img{
+    width: 3vw;
+}
+.buttonContainer .telegButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    gap: 1vw;
+
+    font-weight: 200;
+    font-size: 2.4vw;
+    line-height: 2.4vw;
+
+    width: 18vw;
+    height: 6vw;
+
+    color: white;
+
+    border: none;
+    background: #0094FF;
+    border-radius: 1vw 1vw 3vw 3vw ;
+    filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
+
+
+}
+.telegButton img{
+    width: 3vw;
+}
+.instButton:hover{
+    background: linear-gradient(125.12deg, #FFBA0E 0.32%, #f474a1 51.88%, #8300FF 95.63%);
+    transition: background-color 0.2s;
+
+} 
+.instButton:active{
+    background: linear-gradient(125.12deg, #FFBA0E 0.32%, #f80f61 51.88%, #8300FF 95.63%);
+
+} 
+.telegButton:hover{
+    background: #6ac1ff;
+    transition: background-color 0.2s;
+
+} 
+.telegButton:active{
+    background: #005999;
+} 
