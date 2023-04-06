@@ -89,8 +89,7 @@
 
 }
 /* ----------- iPhone X ----------- */
-@media only screen 
-  and (min-device-width: 375px) 
+@media (min-device-width: 375px) 
   and (max-device-width: 1080px) 
   { 
     .barContainer{
