@@ -2,106 +2,135 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;  
+    padding: 2vw;
+    gap: 2vw;
+    width: 70vw;
+    background: linear-gradient(180deg, #99CFE6 0%, #D1D0D1 39.06%, #D0CFD0 60.94%, #FBAECA 100%);
+    border-radius: 1vw;
 }
 .header{
     font-weight: 200;
-    font-size: 3vw;
-    line-height: 3vw;
+    font-size: 4vw;
+    line-height: 4vw;
     color: #4B4530;
+    margin: 0;
 }
-.messengers{
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+
+}
+.introFirst{
+    box-sizing: border-box;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: end;
-    gap: 4vw;
-}
-.instagram{
+    padding: 10px;  
+    background: white;
+    border-radius: 2vw;
 
-}
-.instagram img{
+    font-weight: 200;
+    font-size: 2vw;
+    line-height: 2.5vw;
+
+    color: #543724;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     width: 30vw;
-    filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
-}
-.telegramm{
 
 }
-.telegramm img{
+.introSecond{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2vw;
+
+    padding: 10px;  
+    background: white;
+    border-radius: 2vw;
+
+    font-weight: 200;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    width: 30vw;
+
+    color: #543724;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.imgFirst{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.imgSecond{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+.grid img{
     width: 30vw;
     filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
 }
 .buttonContainer{
     display: flex;
-    gap: 16vw;
+    gap: 1vw;
+}
+.buttonContainer button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    gap: 1vw;
+
+    font-weight: 200;
+    font-size: 1.8vw;
+    line-height: 1.8vw;
+
+    height: 6vw;
+
+    border: none;
+    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+    filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
 
 }
 .buttonContainer .instButton{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 1vw;
-    gap: 1vw;
-
-    font-weight: 200;
-    font-size: 2.4vw;
-    line-height: 2.4vw;
-
-    width: 18vw;
-    height: 6vw;
-
     color:#301b1b;
-
-    border: none;
     background: linear-gradient(125.12deg, #FFBA0E 0.32%, #F43A7C 51.88%, #8300FF 95.63%);
-    border-radius: 1vw 1vw 3vw 3vw;
-    filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
-
-
-}
-.instButton img{
-    width: 3vw;
 }
 .buttonContainer .telegButton{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 1vw;
-    gap: 1vw;
-
-    font-weight: 200;
-    font-size: 2.4vw;
-    line-height: 2.4vw;
-
-    width: 18vw;
-    height: 6vw;
-
     color: white;
-
-    border: none;
     background: #0094FF;
-    border-radius: 1vw 1vw 3vw 3vw ;
-    filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
-
-
 }
-.telegButton img{
+.instButton img, .telegButton img{
     width: 3vw;
 }
 .instButton:hover{
     background: linear-gradient(125.12deg, #FFBA0E 0.32%, #f474a1 51.88%, #8300FF 95.63%);
     transition: background-color 0.2s;
-
 } 
 .instButton:active{
     background: linear-gradient(125.12deg, #FFBA0E 0.32%, #f80f61 51.88%, #8300FF 95.63%);
-
 } 
 .telegButton:hover{
     background: #6ac1ff;
     transition: background-color 0.2s;
-
 } 
 .telegButton:active{
     background: #005999;
