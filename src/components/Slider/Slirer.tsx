@@ -1,14 +1,14 @@
-import { Carousel } from 'react-responsive-carousel'
 import style from './style.module.css'
 import alpha from './img/alpha.png'
 import dacha from './img/dacha.png'
 import berg from './img/berg.png'
+import { Carousel } from 'react-responsive-carousel'
 
 export default function Slirer (): JSX.Element {
   return (
-    <div className={style.container}>
+    <section className={style.container}>
       <h1 className={style.header}>Кейс моих успешно закрытых дел</h1>
-    <Carousel useKeyboardArrows = {true} interval={1000}>
+    <Carousel className={style.carousel} useKeyboardArrows = {true} interval={1000}>
                 <div className={style.slide}>
                     <img src={alpha} />
                     {/* <p className="legend">Legend 123123123123123123123121</p> */}
@@ -54,6 +54,6 @@ export default function Slirer (): JSX.Element {
                     </div>
                 </div>
             </Carousel>
-    </div>
+    </section>
   )
 }

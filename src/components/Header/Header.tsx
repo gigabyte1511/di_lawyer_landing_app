@@ -1,5 +1,5 @@
 import style from './style.module.css'
-import header from './img/header.png'
+import headerImg from './img/HeaderImg.png'
 import Bar from '../Bar/Bar'
 import { useNavigate } from 'react-router-dom'
 
@@ -39,7 +39,7 @@ function Header (): JSX.Element {
   )
   return (
     <header className={style.container}>
-        <img className={style.image} src={header} alt="" />
+        <img className={style.image} src={headerImg} alt="" />
         <div className={style.textfield} lang="ru">
             <h2>Ваш личный адвокат</h2>
             <h1>Альмяшева Диана Ильдаровна</h1>
@@ -52,7 +52,7 @@ function Header (): JSX.Element {
             <div>Услуги</div>
             <div>Отзывы</div>
         </nav>
-        <div className={style.services}>
+        <div className={style.barContainer}>
             <Bar title = "Консультация"
               about={$consultationAbout}
               />

@@ -1,25 +1,47 @@
 .container{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;  
-}
+    padding: 0px;  }
 .header{
+    position: absolute;
     font-weight: 200;
     font-size: 3vw;
     line-height: 3vw;
     color: #4B4530;
+    z-index: 1;
 }
 .imageVrapper{
     position: relative;
-    width: 70vw;
 }
 .image{
     width: 70vw;
+    border-radius: 2vw;
+
 }
 .form{
     position: absolute;
     top: 15vw;
     left: 12vw;
+
+}
+@media only screen and (min-width: 1680px) {
+    .image{
+        width: 60vw;
+    }
+
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .image{
+        width: 100vw;
+    }
+    .header{
+        font-size: 4vw;
+        line-height: 4vw;
+    }
 
 }
