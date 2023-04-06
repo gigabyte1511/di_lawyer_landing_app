@@ -89,8 +89,8 @@
 
 }
 /* ----------- iPhone X ----------- */
-@media (min-device-width: 375px) 
-  and (max-device-width: 1080px) 
+@media (min-width: 375px) 
+  and (max-width: 1080px) 
   { 
     .barContainer{
        display: flex;
