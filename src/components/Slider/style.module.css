@@ -1,9 +1,15 @@
 .container{
-    position: relative;
     display: flex;
     flex-direction: column;
-    width: 70vw;
     text-align: center;
+    width: 60vw;
+    background: linear-gradient(180deg, #C5BCA7 0%, rgba(221, 221, 221, 0.7) 47.92%, #6e6e6e 100%);
+    border-radius: 2vw;
+
+}
+.carousel{
+    margin-left: auto;
+    margin-right: auto;
 }
 .header{
     font-weight: 200;
@@ -11,11 +17,7 @@
     line-height: 3vw;
     color: #4B4530;
 }
-.slide{
-}
-.slide img{
-    
-}
+
 .slideHeader{
     position: absolute;
     top:0;
@@ -33,7 +35,7 @@
 .textArea{
     position: absolute;
     top: 15vw;
-    left: 5vw;
+    left: 5vw; 
     background-color: white;
     border-radius: 2vw;
     width: 40vw;
@@ -43,5 +45,55 @@
     font-weight: 100;
     font-size: 1.6vw;
     line-height: 2vw;
+
+}
+@media only screen and (min-width: 1680px) {
+    .container{
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slideHeader{
+        width: 20vw;    
+        font-size: 0.8vw;
+        line-height: 0.8vw;
+    }
+    .textArea{
+        top: 6vw;
+        width: 30vw;
+        font-size: 1.2vw;
+        line-height: 1.4vw;
+    
+    }
+
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .container{
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header{
+        font-weight: 200;
+        font-size: 4vw;
+        line-height: 4vw;
+        color: #4B4530;
+    }
+    .slideHeader{
+        width: 80vw;    
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+    .textArea{
+        top: 20vw;
+        left: 5vw;
+        width: 60vw;
+        font-size: 3vw;
+        line-height: 3.2vw;
+    
+    }
 
 }
