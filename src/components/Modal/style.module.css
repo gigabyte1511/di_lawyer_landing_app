@@ -17,6 +17,23 @@
     opacity: none;
     z-index: 2;
 }
+.closeButton{
+    width: 5vw;
+    padding: 1vw;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    cursor: pointer;
+    border-radius: 2vw;
+    opacity: 0.5;
+    transition: opacity 0.4s;
+
+}
+.closeButton:hover{
+    opacity: 1;
+    transition: opacity 0.4s;
+
+}
 @media (max-width: 1440px) {
 
 }

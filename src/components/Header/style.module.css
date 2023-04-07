@@ -40,14 +40,14 @@
 .button{
     width: 25vw;
     font-weight: 300;
-    font-size: 2vw;
-    line-height: 2vw;
+    font-size: 2.1vw;
+    line-height: 2.1vw;
     text-align: center;
     color: #D1D1D1;
     background-color: #944C40;
-    border-radius: 10px;
+    border-radius: 1.1vw;
     border: 0;
-    padding: 5px;
+    padding: 0.7vw;
 }
 .button:hover{
     background-color: #944132;
@@ -96,5 +96,30 @@
        flex-direction: column;
        align-items: center;
        padding-bottom: 2vw;
+    }
+    .textfield{
+        gap: 10px;
+        left: 20vw;
+        top: 26vw;
+    }
+    .textfield h1{
+        width: 42vw;
+        font-weight: 300;
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    .textfield h2{
+        font-weight: 300;
+        font-size: 2.7vw;
+        line-height: 1vw;
+    }
+    .textfield p {
+        display: none;
+    }
+    .button{
+        width: 40vw;
+        font-weight: 300;
+        font-size: 4vw;
+        line-height: 4vw;
     }
 }
