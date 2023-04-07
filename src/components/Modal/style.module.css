@@ -18,11 +18,11 @@
     z-index: 2;
 }
 .closeButton{
-    width: 5vw;
+    width: 2vw;
     padding: 1vw;
     position: absolute;
-    top: 1vw;
-    left: 1vw;
+    top: 0vw;
+    left: 0vw;
     cursor: pointer;
     border-radius: 2vw;
     opacity: 0.5;
@@ -44,5 +44,10 @@
 @media (max-width: 767px) { 
     .container{
         top:20%;
+    }
+    .closeButton{
+        width: 5vw;
+        top: 1vw;
+        left: 1vw;
     }
 }
