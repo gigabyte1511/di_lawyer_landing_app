@@ -21,7 +21,7 @@ export default function Footer (): JSX.Element {
         <div className={style.devInfo}>
             <p>© Kimry development 2023</p>
             <p>Gabets Denis <a href="https://github.com/gigabyte1511">https://github.com/gigabyte1511</a></p>
-            <p>V1.0 Developed by React 18.2.0</p>
+            <p>V1.0 Developed by React 18.2.0, Builded by Vite</p>
         </div>
     </div>
   )
