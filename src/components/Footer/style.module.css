@@ -1,0 +1,81 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* background: #d1cfcda3; */
+    background: #e9d6e8a3;
+    padding: 2vw;
+
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+
+}
+.contacts h1{
+    font-weight: 300;
+    font-size: 1.7vw;
+    line-height: 2.2vw;
+    color: #8d684ed5;
+    margin: 0;
+}
+.contacts p{
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 1vw;
+    color: #626262cb;
+    padding-top: 1vw;
+    margin: 0;
+
+}
+.contacts a{
+    color: #944C40;
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 1vw;
+    padding-bottom: 0.6vw;
+}
+.socialContainer{
+    display: flex;
+    flex-direction: column;
+}
+.devInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.devInfo p{ 
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 1vw;
+    color: #989898;
+    margin: 0.4vw;
+}
+.devInfo a{
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 1vw;
+    color: rgb(62, 62, 62);
+
+}
+@media (max-width: 1440px) {
+    .barContainer{
+    }
+
+}
+@media (max-width: 1023px) {
+    .barContainer{
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-auto-rows: 10vw;
+        padding-bottom: 2vw;
+    }
+}
+/* ----------- iPhone X ----------- */
+@media (max-width: 767px) { 
+    .barContainer{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-bottom: 2vw;
+    }
+}

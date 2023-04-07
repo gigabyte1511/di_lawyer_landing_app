@@ -70,29 +70,27 @@
 }
 .barContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 15vw;
     grid-column-gap: 2vw;
     grid-row-gap: 2vw;
-    grid-auto-rows: 15vw;
+    z-index: 1;
 }
 
-@media only screen and (min-width: 1680px) {
+@media (max-width: 1440px) {
     .barContainer{
-
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-rows: 15vw;
-        grid-column-gap: 2vw;
-        grid-row-gap: 2vw;
-        z-index: 1;
     }
 
 }
+@media (max-width: 1023px) {
+    .barContainer{
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-auto-rows: 10vw;
+        padding-bottom: 2vw;
+    }
+}
 /* ----------- iPhone X ----------- */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+@media (max-width: 767px) { 
     .barContainer{
        display: flex;
        flex-direction: column;

@@ -16,26 +16,30 @@
     position: relative;
 }
 .image{
-    width: 70vw;
+    width: 60vw;
     border-radius: 2vw;
 
 }
 .form{
     position: absolute;
-    top: 15vw;
-    left: 12vw;
+    top: 17vw;
+    left: 8vw;
 
 }
-@media only screen and (min-width: 1680px) {
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1023px) {
     .image{
-        width: 60vw;
+        width: 75vw;
     }
-
+    .form{
+        position: absolute;
+        top: 15vw;
+        left: 10vw;
+    }
 }
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+@media (max-width: 767px) { 
     .image{
         width: 100vw;
     }
@@ -43,5 +47,4 @@
         font-size: 4vw;
         line-height: 4vw;
     }
-
 }

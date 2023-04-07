@@ -14,12 +14,13 @@
     text-align: center;
     background-color: #E4C5E9;
     margin: 0;
+    padding: 1vw;
 }
 .form{
     display: flex;
     flex-direction: column;
     gap: 1vw;
-    padding: 10px;
+    padding: 3vw;
 }
 .button{
     font-weight: 200;
@@ -28,7 +29,7 @@
     color: #4d4d4d;
     text-align: center;
     background-color: #E4C5E9;
-    border-radius: 5px;
+    border-radius: 0.5vw 0.5vw 2vw 2vw;
     border: 1px solid #826886;
     /* transition:background-color 0.5s; */
 }
@@ -40,4 +41,32 @@
 .button:active{
     background-color: #a545b6;
     transition:none;
+}
+
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1023px) {
+
+}
+@media (max-width: 767px) { 
+    .container{
+        width: 80vw;
+        background-color: rgba(230, 230, 230, 0.677);
+
+    }
+    .header{
+        font-size: 6.5vw;
+        line-height: 6.5vw;
+        padding: 3vw;
+    }
+    .form{
+        gap: 4vw;
+        padding: 6vw;
+    }
+    .button{
+        font-size: 5vw;
+        line-height: 5vw;
+        height: 10vw;
+    }
 }

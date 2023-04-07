@@ -9,12 +9,23 @@
 }
 .container{
     position: fixed;
-    top:50%;
-    transform: translateY(-50%);
+    top:30%;
     left:50%;
     transform: translateX(-50%);
-    color: rgb(255, 10, 10);
+    border-radius: 1vw;
     background-color: rgb(189, 189, 189);
     opacity: none;
     z-index: 2;
+}
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1023px) {
+
+}
+/* ----------- iPhone X ----------- */
+@media (max-width: 767px) { 
+    .container{
+        top:20%;
+    }
 }
