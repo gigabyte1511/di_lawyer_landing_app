@@ -18,14 +18,18 @@ export default function ContactSection (): JSX.Element {
               Подписывайтесь на мой Instagram и Telegram, там вы найдете больше информации обо мне, а также узнаете много нового и полезного.
             </div>
             <div className={style.buttonContainer}>
-              <button className={style.instButton}>
-                <p>Instagram</p>
-                <img src={instgram_logo} alt="" />
-              </button>
-              <button className={style.telegButton}>
-                <p>Telegram</p>
-                <img src={telegram_logo} alt="" />
-              </button>
+              <a href="https://www.instagram.com/blonde__lawyer/" target = "_blank" rel="noreferrer">
+                <button className={style.instButton}>
+                  <p>Instagram</p>
+                  <img src={instgram_logo} alt="" />
+                </button>
+              </a>
+              <a href="https://t.me/almyashevadiana" target = "_blank" rel="noreferrer">
+                <button className={style.telegButton}>
+                  <p>Telegram</p>
+                  <img src={telegram_logo} alt="" />
+                </button>
+              </a>
             </div>
           </div>
           <img className={style.imgSecond} src={telegram} alt="" />

@@ -3,6 +3,7 @@ import { Formik, Form, Field } from 'formik'
 import * as Yup from 'yup'
 import CustomInput from '../CustomInput/CustomInput'
 import { toast } from 'react-toastify'
+import { useNavigate } from 'react-router-dom'
 
 interface MyFormValues {
   name: string
@@ -12,6 +13,7 @@ interface MyFormValues {
 
 export default function ContactForm (): JSX.Element {
   const initialValues: MyFormValues = { name: '', phone: '', email: '' }
+  const navigate = useNavigate()
   return (
      <div className={style.container}>
         <h3 className={style.header}>Оставте заявку на консультацию</h3>
@@ -26,6 +28,7 @@ export default function ContactForm (): JSX.Element {
          })}
          onSubmit={(values, actions) => {
            toast.success(`${values.name}, ваша заявка успешно создана!`, { icon: '❤️' })
+           navigate('/')
          }}
        >
         {({ errors, touched }) => (
