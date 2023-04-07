@@ -43,7 +43,7 @@ function Header (): JSX.Element {
         <div className={style.textfield} lang="ru">
             <h2>Ваш личный адвокат</h2>
             <h1>Альмяшева Диана Ильдаровна</h1>
-            <p>Регистрационный номер в реестре адвокатов: 228</p>
+            <p>Регистрационный номер в реестре адвокатов: 4.20</p>
             <button className={style.button} onClick={() => { navigate('/contacts') }}>Получить консультацию</button>
 
         </div>

@@ -43,16 +43,21 @@
     grid-row-end: 2;
     width: 30vw;
 
+    width: 20vw;
+    font-weight: 200;
+    font-size: 1vw;
+    line-height: 1.3vw;
+
 }
 .introSecond{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2vw;  
 
     gap: 2vw;
 
-    padding: 10px;  
     background: white;
     border-radius: 2vw;
 
@@ -67,6 +72,11 @@
     grid-row-start: 3;
     grid-row-end: 4;
     width: 30vw;
+
+    width: 20vw;
+    font-weight: 200;
+    font-size: 1vw;
+    line-height: 1.3vw;
 
 }
 
@@ -86,10 +96,16 @@
 .grid img{
     width: 10vw;
     filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
+
+    width: 20vw;
+    filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
 }
 .buttonContainer{
     display: flex;
     gap: 1vw;
+}
+.buttonContainer a{
+    text-decoration-line:none
 }
 .buttonContainer button{
     display: flex;
@@ -109,6 +125,11 @@
     border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
     filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
 
+    height: 3vw;
+    font-weight: 200;
+    font-size: 1vw;
+    line-height: 1vw;
+
 }
 .buttonContainer .instButton{
     color:#301b1b;
@@ -120,6 +141,7 @@
 }
 .instButton img, .telegButton img{
     width: 3vw;
+    width: 1vw;
 }
 .instButton:hover{
     background: linear-gradient(125.12deg, #FFBA0E 0.32%, #f474a1 51.88%, #8300FF 95.63%);
@@ -135,40 +157,45 @@
 .telegButton:active{
     background: #005999;
 } 
-@media only screen and (min-width: 1680px) {
+
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1023px) {
+    .container{
+        width: 75vw;
+        border-radius: 2vw;
+    }
     .introFirst{
-        width: 20vw;
+        width: 29vw;
         font-weight: 200;
-        font-size: 1vw;
-        line-height: 1.3vw;
+        font-size: 2vw;
+        line-height: 2.3vw;
     
     }
     .introSecond{
-        width: 20vw;
+        width: 29vw;
         font-weight: 200;
-        font-size: 1vw;
-        line-height: 1.3vw;
+        font-size: 2vw;
+        line-height: 2.3vw;
     }
     .grid img{
-        width: 20vw;
+        width: 29vw;
         filter: drop-shadow(20px 0px 20px rgba(0, 0, 0, 0.25));
     }
     .buttonContainer button{
-        height: 3vw;
+        height: 5vw;
         font-weight: 200;
-        font-size: 1vw;
-        line-height: 1vw;
-    }
+        font-size: 2vw;
+        line-height: 2vw;
+        border-radius: 3vw 3vw 3vw 3vw;
 
+    }
     .instButton img, .telegButton img{
-        width: 1vw;
+        width: 2vw;
     }
-
 }
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+@media (max-width: 767px) { 
     .container{
         width: 100vw;
         border-radius: 2vw;
