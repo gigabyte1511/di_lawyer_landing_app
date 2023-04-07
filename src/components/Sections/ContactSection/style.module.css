@@ -115,7 +115,7 @@
     padding: 1vw;
     gap: 1vw;
 
-    font-weight: 200;
+    font-weight: 600;
     font-size: 1.8vw;
     line-height: 1.8vw;
 
@@ -201,21 +201,21 @@
         border-radius: 2vw;
     }
     .header{
-        font-weight: 200;
+        font-weight: 400;
         font-size: 4vw;
         line-height: 4vw;
         color: #4B4530;
     }
     .introFirst{
         width: 47vw;
-        font-weight: 200;
+        font-weight: 400;
         font-size: 3vw;
         line-height: 3.3vw;
     
     }
     .introSecond{
         width: 47vw;
-        font-weight: 200;
+        font-weight: 400;
         font-size: 3vw;
         line-height: 3.3vw;
     }
@@ -225,7 +225,7 @@
     }
     .buttonContainer button{
         height: 10vw;
-        font-weight: 200;
+        font-weight: 600;
         font-size: 3vw;
         line-height: 3vw;
         border-radius: 3vw 3vw 3vw 3vw;
