@@ -3,3 +3,6 @@
 1. React
 2. Vite
 3. TypeScript
+
+## Preview
+![My Image](screenshot.png)
