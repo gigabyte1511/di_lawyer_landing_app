@@ -3,6 +3,7 @@
 1. React
 2. Vite
 3. TypeScript
+## The application has adaptation for various devices
 
 ## Preview
 ![My Image](screenshot.png)
