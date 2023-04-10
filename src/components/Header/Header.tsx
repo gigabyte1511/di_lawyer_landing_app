@@ -47,11 +47,11 @@ function Header (): JSX.Element {
             <button className={style.button} onClick={() => { navigate('/contacts') }}>Получить консультацию</button>
 
         </div>
-        <nav className={style.navigation}>
+        {/* <nav className={style.navigation}>
             <div>Обо мне</div>
             <div>Услуги</div>
             <div>Отзывы</div>
-        </nav>
+        </nav> */}
         <div className={style.barContainer}>
             <Bar title = "Консультация"
               about={$consultationAbout}
