@@ -21,4 +21,4 @@ The following viewport values ​​are currently supported:
 ![My Image](public/preview/carousel.png)
 ![My Image](public/preview/devices.png)
 
-## [Go](https://di-lawyer-landing-h89tva9y9-gigabyte1511.vercel.app/ "Необязательная подсказка") to the Versel environments to see one of the versions of the application
+## [Go](https://di-lawyer-landing-o05fax77f-gigabyte1511.vercel.app/ "Необязательная подсказка") to the Versel environments to see one of the versions of the application
