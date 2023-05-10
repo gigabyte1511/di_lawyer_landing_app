@@ -31,6 +31,7 @@ module.exports = {
     '@typescript-eslint'// Для TypeScript.
   ],
   rules: {
-    '@typescript-eslint/space-before-function-paren': 'off'
+    '@typescript-eslint/space-before-function-paren': 'off',
+    '@typescript-eslint/indent': 'off'
   }
 }
